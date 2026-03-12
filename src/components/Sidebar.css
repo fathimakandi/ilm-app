@@ -1,0 +1,22 @@
+.sidebar{width:220px;min-width:220px;background:#0a0a14;border-right:1px solid #1a1a2e;display:flex;flex-direction:column;padding:24px 12px;gap:8px;height:100%}
+.sidebar-brand{display:flex;align-items:center;gap:10px;padding:8px 10px 20px;border-bottom:1px solid #1a1a2e;margin-bottom:8px}
+.brand-icon{font-size:28px}
+.brand-name{font-size:15px;font-weight:700;color:#e8e8f0}
+.brand-sub{font-size:11px;color:#555;margin-top:1px}
+.offline-badge{display:flex;align-items:center;gap:6px;background:#1a1208;border:1px solid #3a2e08;color:#f0a020;font-size:11px;font-weight:600;padding:6px 10px;border-radius:8px;margin-bottom:4px}
+.sidebar-nav{display:flex;flex-direction:column;gap:2px;flex:1}
+.nav-item{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;border:none;background:none;color:#666;font-size:14px;font-weight:500;cursor:pointer;font-family:inherit;text-align:left;width:100%;transition:all .15s}
+.nav-item:hover{background:#12121f;color:#ccc}
+.nav-item.active{background:#6c63ff22;color:#9d8fff}
+.nav-icon{width:18px;height:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.nav-icon svg{width:18px;height:18px}
+.sidebar-footer{padding:12px 10px 0;border-top:1px solid #1a1a2e;margin-top:8px}
+.footer-note{font-size:10px;color:#444;margin-bottom:2px}
+.footer-link{font-size:12px;color:#6c63ff;text-decoration:none}
+.footer-link:hover{text-decoration:underline}
+@media(max-width:768px){
+  .sidebar{width:100%;min-width:0;height:auto;flex-direction:row;align-items:center;padding:0 16px;border-right:none;border-bottom:1px solid #1a1a2e;position:fixed;bottom:64px;left:0;right:0;z-index:100;background:#0a0a14}
+  .sidebar-brand,.offline-badge,.sidebar-footer{display:none}
+  .sidebar-nav{flex-direction:row;width:100%}
+  .nav-item{flex:1;flex-direction:column;gap:4px;padding:10px 8px;font-size:11px;justify-content:center;align-items:center;border-radius:0}
+}

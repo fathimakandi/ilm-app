@@ -1,0 +1,24 @@
+.audio-player{position:fixed;bottom:0;left:0;right:0;height:64px;background:#0f0f1a;border-top:1px solid #2a2a3e;display:flex;align-items:center;padding:0 20px;gap:16px;z-index:200;box-shadow:0 -4px 24px rgba(0,0,0,.4)}
+.player-info{display:flex;align-items:center;gap:10px;min-width:180px;max-width:220px}
+.player-icon{font-size:22px;flex-shrink:0}
+.player-title{font-size:12px;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.player-source{font-size:10px;color:#888;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.player-controls-center{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px}
+.player-buttons{display:flex;align-items:center;gap:12px}
+.ctrl-btn{background:none;border:none;cursor:pointer;color:#ccc;padding:4px;display:flex;align-items:center;justify-content:center;border-radius:50%;transition:color .15s,background .15s}
+.ctrl-btn:hover{color:#fff;background:rgba(255,255,255,.08)}
+.play-btn{width:36px;height:36px;background:#6c63ff!important;color:#fff!important;border-radius:50%}
+.play-btn:hover{background:#7c73ff!important}
+.player-progress-wrap{display:flex;align-items:center;gap:8px;width:100%;max-width:460px}
+.player-time{font-size:10px;color:#888;min-width:32px;text-align:center}
+.player-progress{flex:1;height:3px;background:#2a2a3e;border-radius:2px;position:relative;cursor:pointer}
+.player-progress:hover{height:5px}
+.player-progress-fill{height:100%;background:#6c63ff;border-radius:2px;pointer-events:none}
+.player-progress-thumb{position:absolute;top:50%;transform:translate(-50%,-50%);width:10px;height:10px;border-radius:50%;background:#6c63ff;pointer-events:none;opacity:0;transition:opacity .15s}
+.player-progress:hover .player-progress-thumb{opacity:1}
+.player-right{display:flex;align-items:center;gap:12px;min-width:140px;justify-content:flex-end}
+.speed-select{background:#1e1e30;border:1px solid #2a2a3e;color:#ccc;font-size:11px;padding:3px 6px;border-radius:6px;cursor:pointer;outline:none}
+.volume-wrap{display:flex;align-items:center;gap:4px}
+.vol-icon{color:#888;flex-shrink:0}
+.volume-slider{width:64px;accent-color:#6c63ff;cursor:pointer}
+@media(max-width:600px){.audio-player{padding:0 12px;gap:8px}.player-info{min-width:0;max-width:110px}.player-right{min-width:0}.volume-wrap{display:none}}
