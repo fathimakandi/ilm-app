@@ -16,6 +16,9 @@
 .pill:hover{border-color:#fff}
 .pill.active{background:#fff;color:#000;border-color:#fff}
 .results-count{font-size:13px;color:var(--muted);font-weight:600}
+.browse-section{display:flex;flex-direction:column;gap:12px}
+.section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}
+.section-title{font-size:20px;font-weight:700;color:#fff;letter-spacing:-0.3px}
 .card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px}
 .state-msg{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:80px 20px;color:var(--muted);text-align:center}
 .state-msg span{font-size:40px}.state-msg p{font-size:14px;font-weight:600;color:#fff}.state-msg small{font-size:12px}

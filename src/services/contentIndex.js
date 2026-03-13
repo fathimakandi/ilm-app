@@ -196,7 +196,9 @@ export function getContent(tab, search, filter) {
   let items = CONTENT
   if (tab === 'classical') items = items.filter(i => i.type === 'book')
   else if (tab === 'lectures') items = items.filter(i => i.type === 'audio')
-  if (filter !== 'all') items = items.filter(i => i.type === filter)
+  if (filter === 'audio') items = items.filter(i => i.type === 'audio')
+  else if (filter === 'book') items = items.filter(i => i.type === 'book')
+  else if (filter !== 'all') items = items.filter(i => i.category === filter || i.source === filter)
   if (search) {
     const q = search.toLowerCase()
     items = items.filter(i =>
